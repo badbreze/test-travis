@@ -10,10 +10,7 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.4.0",
-        "elitedivision/amos-core":"*",
-        "elitedivision/amos-dashboard":"*",
-        "elitedivision/amos-admin":"*"
+        "php": ">=5.4.0"
     },
     "extra": {
         "asset-installer-paths": {
