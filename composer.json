@@ -1,0 +1,32 @@
+{
+    "name": "elitedivision/amos-eventi",
+    "description": "Gestore eventi con calendario - plugin",
+    "keywords": ["amos", "yii2", "events"],
+    "type": "plugin",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/elitedivision/amos-ebenti/issues?state=open",
+        "source": "https://github.com/elitedivision/amos-eventi"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "elitedivision/amos-core":"*",
+        "elitedivision/amos-dashboard":"*",
+        "elitedivision/amos-admin":"*"
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "elitedivision\\amos\\eventi\\": "src"
+        }
+    },
+    "require-dev": {
+        "yiisoft/yii2-faker": "*"
+    }
+}
