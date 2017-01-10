@@ -10,7 +10,10 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "elitedivision/amos-core":"*",
+        "elitedivision/amos-dashboard":"*",
+        "elitedivision/amos-admin":"*"
     },
     "extra": {
         "asset-installer-paths": {
@@ -23,7 +26,17 @@
             "elitedivision\\amos\\eventi\\": "src"
         }
     },
+    "scripts": {
+        "phpdoc": "phpdoc",
+        "test-prepare": [
+            "php tests/yii migrate --migrationPath=@tests/migrations/ --interactive=0"
+        ],
+        "test": "phpunit --colors=always",
+        "test-coverage": "phpunit --coverage-html=tests/tmp/coverage.html --colors=always",
+        "test-coverage-open": "open tests/tmp/coverage.html/index.html"
+    },
     "require-dev": {
-        "yiisoft/yii2-faker": "*"
+        "yiisoft/yii2-faker": "*",
+        "codeception/codeception": "*"
     }
 }
